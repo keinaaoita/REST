@@ -34,3 +34,26 @@ When dealing with interface for a RESTful service, behave in a very specific way
 2. HATEOAS (Hypermedia as the Engine of Application State)
 
     + In each request, there will be a set of links that can used to navigate through the API. Shows what other actions you can take on a specific resource.
+
+## Tools Used
+
+### ES Lint
+
+Formats code based on strict syntax to maintain order and cleanliness.
+
+Installs eslint as a dependency 
+
+    npm i eslint -D
+
+    npm run lint
+
+To customize certain rules of eslint, include properties based on name and values.
+
+    rules: {
+        "linebreak-style": 0
+    }
+
+### Nodemon
+
+Any changes made will automatically reflect onto the designated node environment. Settings was configured in package.json.
+
